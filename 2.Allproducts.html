@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .navbar{
+        width: 100%;
+        height: 40px;
+        /* border: 2px solid rgb(143, 139, 139); */
+        position: relative;
+        box-shadow:  0px 1px 0px 0px;
+    }
+    .Retur{
+        position: absolute;
+        display: inline-block;
+        left: 1000px;
+        color: rgb(143, 139, 139);
+        cursor: pointer;
+    }
+    .Hel{
+        position: absolute;
+        display: inline-block;
+        left: 1100px;
+        color: rgb(143, 139, 139);
+        cursor: pointer;
+
+    }
+    .Reg{
+        position: absolute;
+        display: inline-block;
+        left: 1200px;
+        color: rgb(143, 139, 139);
+        cursor: pointer;
+    }
+
+    .Menu{
+        /* border: 2px solid rgb(184, 183, 182); */
+        width: 100%;
+        height: 180px;
+        position: relative;
+    }
+
+    .search{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50px;
+        cursor: pointer;
+    }
+    .shop{
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        top: 70px;
+        left: 320px;
+        color: rgb(81, 81, 80);
+        font-family:Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    .Essentials{
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        top: 70px;
+        left: 420px;
+        color: rgb(81, 81, 80);
+        font-family:Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    .logo{
+        height: 140px;
+        width: 200px;
+        position: absolute;
+        left: 600px;
+        top: 20px;
+    }
+
+    .best{
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        top: 70px;
+        left: 860px;
+        color: rgb(81, 81, 80);
+        font-family:Arial, Helvetica, sans-serif;
+        cursor: pointer;    
+        
+    }
+
+    .ABOUT{
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        top: 70px;
+        left: 1050px;
+        color: rgb(81, 81, 80);
+        font-family:Arial, Helvetica, sans-serif ;
+        cursor: pointer;
+    }
+
+    .profile{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 60px;
+        right: 130px;
+        cursor: pointer;
+    }
+
+    .notification{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 55px;
+        right: 65px;
+        cursor: pointer;
+    }
+
+    .bag{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .openimg{
+        width: 100%;
+        height: 600px;
+    }
+
+
+    .dropdown{
+        width: 350px;
+        height: 200px;
+        /* border: 2px solid red; */
+        
+        position: relative;
+        
+    }
+
+    .sel{
+        width: 350px;
+        border: none;
+        height: 60px;
+        font-size: 20px;
+        font-family: sans-serif;
+        box-shadow: 0px 0px 0px 0px;
+        color: grey;
+        cursor: pointer;
+        
+    }
+    .sel1{
+        width: 350px;
+        border: none;
+        height: 60px;
+        font-size: 20px;
+        font-family: sans-serif;
+        box-shadow: 0px 0px 0px 0px;
+        color: grey;
+        cursor: pointer;
+        
+    }
+    .sel2{
+        width: 350px;
+        border: none;
+        height: 60px;
+        font-size: 20px;
+        font-family: sans-serif;
+        box-shadow: 0px 0px 0px 0px;
+        color: grey;
+        cursor: pointer;
+      
+    }
+
+    .Products{
+        position:absolute;
+        top: 850px ;
+        left: 370px;
+        font-size: 30px;
+        font-family:cursive;
+    }
+
+
+    .SORT{
+        position: absolute;
+        left: 750px;
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+        font-family: sans-serif;
+        box-shadow: 0px 0px 0px 0px;
+        color: rgb(57, 50, 50);
+        border: none;
+        box-shadow: 2px 2px 2px 2px;
+        cursor: pointer;
+        
+    }
+
+
+    .boxes{
+        /* border: 2px solid red; */
+        width: 980px;
+        height: 1590px;
+        position: absolute;
+        left: 20px;
+        top: 90px;
+    }
+
+    .one{
+        position: absolute;
+      
+        width: 270px;
+        height: 400px;
+        left: 20px;
+        top: 10px;
+        background-color: rgb(242, 242, 242);   
+
+    }
+
+    .one > img{
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 30px;
+        top: 40px;
+        
+    }
+
+    .one > p{
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 40px;
+        top: 378px;
+        font-family: sans-serif;
+    }
+
+    .dis{
+        position: absolute;
+        width: 130px;
+        height: 40px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        color: white;
+        background-color: red;
+        left: 140px;
+    }
+
+    .dis > span{
+            position: absolute;
+            left: 30px;
+            top: 10px;
+    }
+
+    .two{
+        position: absolute;
+        width: 270px;
+        height: 400px;
+        left: 360px;
+        top: 10px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .two > img{
+        position: absolute;
+        width: 150px;
+        height: 250px;
+        left: 50px;
+        top: 70px;
+    }
+
+    .two > p{
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 40px;
+        top: 378px;
+        font-family: sans-serif;
+    }
+
+    .three{
+        position: absolute;
+        width: 270px;
+        height: 400px;
+        left: 680px;
+        top: 10px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .three > img {
+        position: absolute;
+        width: 200px;
+        height: 250px;
+        left: 50px;
+        top: 70px;
+    }
+
+    .three > p{
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 40px;
+        top: 378px;
+        font-family: sans-serif;
+    }
+
+    .four{
+    
+        position: absolute;
+        width: 270px;
+        height: 400px;
+        left: 20px;
+        top: 520px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .four > img{
+        position: absolute;
+        width: 150px;
+        height: 250px;
+        left: 50px;
+        top: 70px;
+    }
+
+    .four > p{
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 40px;
+        top: 378px;
+        font-family: sans-serif;
+    }
+
+    .five{
+ 
+        position: absolute;
+        width: 270px;
+        height: 400px;
+        left: 360px;
+        top: 520px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .five > img{
+        position: absolute;
+        width: 210px;
+        height: 250px;
+        left: 30px;
+        top: 70px;
+    }
+
+    .five > p{
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 40px;
+        top: 378px;
+        font-family: sans-serif;
+    }
+
+    .six{
+     
+        position: absolute;
+        width: 270px;
+        height: 400px;
+        left: 680px;
+        top: 520px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .six > img{
+        position: absolute;
+        width: 150px;
+        height: 250px;
+        left: 50px;
+        top: 70px;
+    }
+
+       .dis1{
+        position: absolute;
+        width: 130px;
+        height: 40px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        color: white;
+        background-color: red;
+        left: 140px;
+       }
+
+    .dis1 > span{
+            position: absolute;
+            left: 30px;
+            top: 10px;
+    }
+
+    .six > P{
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 40px;
+        top: 378px;
+        font-family: sans-serif;    
+    }
+
+
+    .seven{
+        position: absolute;
+        width: 270px;
+        height: 430px;
+        left: 20px;
+        top: 1020px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .seven > img{
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 30px;
+        top: 40px;
+        
+    }
+
+    .seven > p {
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 40px;
+        top: 410px;
+        font-family: sans-serif;
+    }
+
+    .dis2{
+        position: absolute;
+        width: 130px;
+        height: 40px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        color: white;
+        background-color: red;
+        left: 140px;
+    }
+    .dis2 > span {
+        position: absolute;
+            left: 30px;
+            top: 10px;
+    }
+
+
+
+    .eight{
+        position: absolute;
+        width: 270px;
+        height: 430px;
+        left: 360px;
+        top:1020px;
+        background-color: rgb(242, 242, 242);   
+    }
+
+    .eight > img{
+        position: absolute;
+        width: 210px;
+        height: 250px;
+        left: 30px;
+        top: 70px;
+    }
+
+    .eight > p {
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 40px;
+        top: 410px;
+        font-family: sans-serif;
+    }
+
+    .nine{
+        position: absolute;
+        width: 270px;
+        height: 430px;
+        left: 680px;
+        top: 1020px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .nine > img {
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        left: 50px;
+        top: 50px;
+    }
+
+    .nine > p {
+        position: absolute;
+        width: 200px;
+        height: 350px;
+        left: 40px;
+        top: 410px;
+        font-family: sans-serif;
+    }
+
+
+    .on{
+        position: absolute;
+        height: 30px;
+        width: 90px;
+        top: 460px;
+        left: 100px;
+    }
+
+    .tw{
+        position: absolute;
+        height: 25px;
+        width: 90px;
+        top: 470px;
+        left: 430px;
+    }
+
+    .thr{
+        position: absolute;
+        height: 25px;
+        width: 90px;
+        top: 470px;
+        left: 770px;
+    }
+
+    .fou{
+        position: absolute;
+        height: 30px;
+        width: 90px;
+        top: 960px;
+        left: 100px;
+    }
+
+    .fiv{
+        position: absolute;
+        height: 30px;
+        width: 90px;
+        top: 960px;
+        left: 430px;
+    }
+
+    .si{
+        position: absolute;
+        height: 30px;
+        width: 90px;
+        top: 960px;
+        left: 760px;
+    }
+
+
+    .sev{ position: absolute;
+        height: 30px;
+        width: 90px;
+        top: 1500px;
+        left: 100px
+
+    }
+
+    .ei{
+        position: absolute;
+        height: 30px;
+        width: 90px;
+        top: 1500px;
+        left: 430px;
+    }
+
+    .ni{
+        position: absolute;
+        height: 30px;
+        width: 90px;
+        top: 1500px;
+        left: 760px;
+    }
+
+
+    
+</style>
+<body>
+    <div class="navbar">
+        <ol class="Retur">Return</ol>
+        <ol class="Hel">Help</ol>
+        <ol class="Reg">Register/Sign in</ol>
+        
+       </div>
+    
+       <div class="Menu">
+        <img src="./searchicon.png" class="search">
+        <span class="shop">SHOP</span>
+        <span class="Essentials">ESSENTIALS</span>
+        <img src="./logo.png" class="logo">
+        <span class="best">BEST SELLERS</span>
+        <span class="ABOUT">ABOUT US</span>
+        <img class="profile" src="./profile.png">
+        <img class="notification" src="./notification.png" alt="">
+        <img class="bag" src="./ibag.png" alt="">
+       </div>
+
+       <div>
+        <img class="openimg" src="./open.png" alt="">
+       </div>
+
+
+       <div class="dropdown">
+        <select class="sel">
+            <option >COMPANY</option>
+            <option >AXE</option>
+            <option >DENVER</option>
+            <option >NIKE</option>
+            <option >ADIDAS</option>
+            <option >PUMA</option>
+        </select>
+        <select class="sel1">
+            <option >PRICE</option>
+            <option >200</option>
+            <option >300</option>
+            <option >400</option>
+            <option >500</option>
+            <option>600</option>
+        </select>
+        <select class="sel2">
+            <option >CATEGORY</option>
+            <option >bODY SPRAY</option>
+            <option >CONDITIONERS</option>
+            <option >MARVEL MERCHANDISE</option>
+            <option >GOGGLES</option>
+            <option >ARM BANDS</option>
+        </select>
+       </div>
+
+       <div class="Products">
+        <Span>40 Products</Span>
+
+        <select class="SORT">
+            <option >SORT</option>
+            <option >size</option>
+            <option >price</option>
+            <option >lowest first</option>
+            <option >highest first</option>
+        </select>
+
+
+
+        <div class="boxes">
+            <div class="one">
+                <img src="././iaxe.png" alt="">
+                <div class="dis"><span >20% OFF</span></div>
+                <p>Body Spray</p>
+            </div>
+            <img class="on" src="./ispray.png" alt="">
+
+            <div class="two">
+                <img src="./ipowder.png" alt="">
+                <p>Vitamin C</p>
+            </div>
+            <img class="tw" src="./ivitaminc.png" alt="">
+
+
+            <div class="three">
+                <img src="./igloves.png" alt="">
+                <p>Hand Gloves</p>
+            </div>
+            <img class="thr" src="ihand gloves.png" alt="">
+
+
+            <div class="four">
+                <img src="./isan.png" alt="">
+                <p>Sanitizer</p>
+            </div>
+            <img class="fou" src="isani.png" alt="">
+
+
+            <div class="five">
+                <img src="./imask.png" alt="">
+                <p>Face Mask</p>
+            </div>
+            <img class="fiv" src="./imask2.png" alt="">
+
+
+            <div class="six">
+                <img src="./inivea.png" alt="">
+                <div class="dis1"><span >40% OFF</span></div>
+                <p>Deodrant</p>
+            </div>
+            <img class="si" src="./ideo.png" alt="">
+
+
+            <div class="seven">
+                <img src="./iaxe.png">
+                <div class="dis2"><span>20% OFF</span></div>
+                <p>Body Spray</p>
+            </div>
+            <img class="sev" src="./ispray.png" alt="">
+
+
+
+
+            <div class="eight">
+                <img src="./ipowder.png" alt="">
+                <p>Vitamin C</p>
+            </div>
+            <img class="ei" src="./ivitaminc.png" alt="">
+
+
+            <div class="nine">
+                <img src="./igloves.png" alt="">
+                <p>Hand Gloves</p>
+            </div>
+                <img class="ni" src="./ihand gloves.png" alt="">
+
+        </div>
+    </div>
+
+
+
+       
+</body>
+</html>

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar{
+        width: 100%;
+        height: 40px;
+        /* border: 2px solid rgb(143, 139, 139); */
+        position: relative;
+        box-shadow:  0px 1px 0px 0px;
+    }
+    .Retur{
+        position: absolute;
+        display: inline-block;
+        left: 1000px;
+        color: rgb(143, 139, 139);
+        cursor: pointer;
+    }
+    .Hel{
+        position: absolute;
+        display: inline-block;
+        left: 1100px;
+        color: rgb(143, 139, 139);
+        cursor: pointer;
+
+    }
+    .Reg{
+        position: absolute;
+        display: inline-block;
+        left: 1200px;
+        color: rgb(143, 139, 139);
+        cursor: pointer;
+    }
+
+    .Menu{
+        /* border: 2px solid rgb(184, 183, 182); */
+        width: 100%;
+        height: 180px;
+        position: relative;
+    }
+
+    .search{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50px;
+        cursor: pointer;
+    }
+    .shop{
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        top: 70px;
+        left: 320px;
+        color: rgb(81, 81, 80);
+        font-family:Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    .Essentials{
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        top: 70px;
+        left: 420px;
+        color: rgb(81, 81, 80);
+        font-family:Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    .logo{
+        height: 140px;
+        width: 200px;
+        position: absolute;
+        left: 600px;
+        top: 20px;
+    }
+
+    .best{
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        top: 70px;
+        left: 860px;
+        color: rgb(81, 81, 80);
+        font-family:Arial, Helvetica, sans-serif;
+        cursor: pointer;    
+        
+    }
+
+    .ABOUT{
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        top: 70px;
+        left: 1050px;
+        color: rgb(81, 81, 80);
+        font-family:Arial, Helvetica, sans-serif ;
+        cursor: pointer;
+    }
+
+    .profile{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 60px;
+        right: 130px;
+        cursor: pointer;
+    }
+
+    .notification{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 55px;
+        right: 65px;
+        cursor: pointer;
+    }
+
+    .bag{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .PARA1{
+        /* border: 2px solid black; */
+        height: 700px;
+        width: 100%;
+        background-color: rgb(241, 238, 238);
+        position: relative;
+    }
+
+    .blue{
+        position: absolute;
+        color: rgb(11, 20, 114);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        top: 120px;
+        left: 50px;
+        font-size: 70px;
+       
+        width: 690px;
+        height: 200px;
+
+    }
+
+    .head{position: absolute;
+        color: rgb(11, 20, 114);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        top: 220px;
+        left: 50px;
+        font-size:70px;
+        
+        width: 550px;
+        height: 200px;
+
+    }
+
+    .personimage{
+        height: 570px;
+        position: absolute;
+        right: 50px;
+        top: 60px;
+        border-radius: 10px;
+    }
+
+    .para t:first-child{
+        font-size: 35px;
+        color: rgb(81, 78, 78);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .para{
+        color: gray;
+        width: 570px;
+        position: absolute;
+        top: 320px;
+        left: 50px;
+        font-size: 25px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .learnmore{
+        position: absolute;
+        top: 550px;
+        border: solid red;
+        left: 50px;
+        height: 50px;
+        width: 250px;
+        font-size: 25px;
+        background-color: rgb(241, 55, 55);
+        color: white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        cursor: pointer;
+    }
+
+    .newpro{
+        width: 100%;
+        height: 150px;
+        
+        position: relative;
+    }
+
+    .newpro1{
+        position: absolute;
+        left: 500px;
+        font-size: 50px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(11, 20, 114);
+        bottom: 20px;
+
+}
+    .newpro1 t:first-child{
+        color: red;
+    }
+
+
+    .cards{
+        /* border: 2px solid black; */
+        height: 650px;
+        width: 100%;
+        position: relative;
+    }
+
+    .mask{
+        /* border: 2px solid red; */
+        height: 650px;
+        width: 400px;
+        position: absolute;
+        left: 40px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .mask > img{
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        top: 160px;
+        left: 25px;
+    }
+
+    .axe{
+        /* border: 2px solid red; */
+        height: 650px;
+        width: 400px;
+        position: absolute;
+        left: 510px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .axe > img{
+        width: 280px;
+        height: 450px;
+        position: absolute;
+        top: 110px;
+        left: 60px;
+    }
+
+    .pads{
+        /* border: 2px solid red; */
+        height: 650px;
+        width: 400px;
+        position: absolute;
+        left: 970px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .pads > img{
+        width: 280px;
+        height: 450px;
+        position: absolute;
+        top: 110px;
+        left: 60px;
+    }
+
+    .seller{
+        border: 2px solid red;
+        width: 140px;
+        height: 30px;
+        position: absolute;
+        left: 298px;
+        background-color: rgb(242, 43, 43);
+    }
+    .TOP{
+        position: absolute;
+        left: 20px;
+        top: 5px;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .title{
+        position:relative;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        font-size: 30px;
+        font-family: sans-serif;
+        top: 30px;
+        
+    }
+    .phoneimg{
+        position: relative;
+    }
+
+    .phoneimg > img {
+        position: absolute;
+        top: 80px;
+        width: 600px;
+    }
+
+    .head2{
+        /* width: 700px;
+        height: 40px;
+        border: 2px solid red; */
+        position: relative;
+    }
+
+    .head2 > span{
+        width: 490px;
+        position: absolute;
+        top: 120px;
+        left: 650px;
+        /* border: 2px solid red; */
+        font-size: 42px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(87, 86, 86);
+    }
+
+    .head2 t:first-child{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: red;
+    }
+
+    .head2 > button{
+        position: absolute;
+        left: 1200px;
+        top: 120px;
+        width: 140px;
+        height: 40px;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: rgb(65, 64, 64);
+        background-color: rgb(182, 181, 181);
+        border: solid rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+    .cards2{
+        /* border: 2px solid red; */
+        width: 750px;
+        height: 500px;
+        position: absolute;
+        top: 190px;
+        left: 630px;
+    }
+
+    .axe2{
+        width: 350px;
+        height: 480px;
+        position: absolute;
+        top: 20px;
+        background-color:  rgb(242, 242, 242);;
+    }
+    .axe2 > img{
+        width: 260px;
+        position: absolute;
+        left: 50px;
+        top: 60px;
+        
+    }
+
+    .pads2{
+        width: 350px;
+        height: 480px;
+        position: absolute;
+        top: 20px;
+        left: 400px;
+        background-color:  rgb(242, 242, 242);;
+    }
+
+    .pads2 > img{
+        width: 260px;
+        position: absolute;
+        left: 50px;
+        top: 70px;
+    }
+
+   .off{
+    border: 2px solid red;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    right: 0px;
+    background-color: rgb(240, 59, 59);
+    color: white;
+    font-family: sans-serif;
+
+   }
+
+   .off > span{
+    position: absolute;
+    left: 45px;
+    top: 3px;
+    background-color: rgb(234, 81, 81);
+   }
+  
+
+
+
+
+   .items{
+    position: relative;
+  
+    width: 600px;
+    height: 90px;
+    left: 700px;
+    top: 710px;
+   }
+   .spray1{
+    position: absolute;
+    font-size: 25px;
+    left: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+   .pad1{
+    position: absolute;
+    left: 390px;
+    font-size: 22px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+   }
+
+   .price1{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+   }
+
+   .price2{
+    position: absolute;
+    left: 420px;
+    top: 30px;
+   }
+
+
+   .box{
+    width: 100%;
+    height: 700px;
+    /* border: 3px solid rgb(38, 24, 71); */
+    position: relative;
+    top: 720px;
+   }
+
+   .Sellings{
+    position: absolute;
+    top: 70px;
+    font-size: 42px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(87, 86, 86);
+    /* border: 2px solid red; */
+   }
+
+   .sellings1 t:first-child{
+    color: rgb(232, 25, 25);
+   }
+
+   .butt2{
+    position: absolute;
+        left: 500px;
+        width: 140px;
+        height: 40px;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: rgb(65, 64, 64);
+        background-color: rgb(182, 181, 181);
+        border: solid rgb(255, 255, 255);
+        cursor: pointer;
+   }
+
+   .image2{
+    position: absolute;
+    right: 0px;
+    height: 750px;
+    width: 570px;
+   }
+
+
+   .spray2{
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 470px;
+    background-color:  rgb(242, 242, 242);
+   }
+
+   .spray2 > img {
+    position: absolute;
+    width: 250px;
+    top: 60px;
+    left: 30px;
+   }
+
+   .mask2{
+    position: absolute;
+    background-color:  rgb(242, 242, 242);
+    left: 400px;
+    top: 160px;
+    width: 360px;
+    height:470px;
+    /* border: 2px solid red; */
+   }
+
+  
+   .mask2 > img{
+    position: absolute;
+    width: 300px;
+    left: 40px;
+    top: 100px;
+   }
+
+
+   .spray3{
+    position: absolute;
+    font-size: 25px;
+    left: 70px;
+    top: 650px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+
+   .mask3{
+    position: absolute;
+    font-size: 25px;
+    left: 520px;
+    top: 650px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+   .off2{
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    top: 160px;
+    left: 223px;
+    background-color: rgb(237, 46, 46);
+    color: white;
+    font-family: sans-serif;
+   }
+   .off2 > span{
+    position: absolute;
+    left: 23px;
+    top: 5px;
+
+   }
+
+   .off3{
+    width: 120px;
+    height: 30px;
+    position: absolute;
+   top: 160px;
+   left: 642px;
+   z-index: 1;  
+   background-color: rgb(237, 46, 46);
+   color: white;
+    font-family: sans-serif
+   
+   }
+
+   .off3 > span{
+    position: absolute;
+    left: 27px;
+    top: 5px;
+    z-index: 1;
+   }
+
+   .four{
+    position: absolute;
+    top: 700px;
+    left: 90px;
+   }
+
+   .four1{
+    position: absolute;
+    top: 700px;
+    left: 510px;
+   }
+
+
+
+   .footer{
+    /* border: 2px solid red; */
+    position: relative;
+    top: 1000px;
+    height: 400px;
+   }
+
+   .logo2{
+    position: absolute;
+    left: 60px;
+    width: 200px;
+   }
+
+
+   .objects{
+    position: absolute;
+    left: 400px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+   }
+
+   .objects > span{
+    cursor: pointer;
+   }
+
+   .objects1{
+    position: absolute;
+    left: 630px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: rgb(66, 66, 66);
+    
+   }
+   .objects1 > span{
+    cursor: pointer;
+   }
+
+   .para2 > span{
+    position: absolute;
+    left: 850px;
+    font-size: 23px;
+    font-family: sans-serif;
+    color: rgb(66, 66, 66);
+   }
+
+
+   .email > input{
+    position: absolute;
+   
+    border: none;
+    box-shadow: 0px 2px 0px 0px;
+    width: 450px;
+    height: 50px;
+    top: 130px;
+    left: 850px;
+
+    font-size: 25px;
+   }
+
+   .icon{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+   }
+ 
+    .material-icons{
+        position: absolute;
+        left: 1250px;
+        top: 130px;
+        font-size: 90px;
+        cursor: pointer;
+        color: black;
+    }  
+    
+    
+    .icons2{
+        position: relative;
+        top: 800px;
+        left: 850px;
+        width: 400px;
+        height: 50px;
+        /* border: 2px solid rgb(9, 71, 125); */
+        z-index: 1;
+    }
+
+
+    #one{
+        position: absolute;
+        left: 20px;
+        color:rgb(5, 15, 153)
+        
+    }
+
+    #two{
+        position: absolute;
+        left: 70px;
+        color:rgb(5, 15, 153)
+    }
+
+    #three{
+        position: absolute;
+        left: 120px;
+        color:rgb(5, 15, 153)
+    }
+
+    #four{
+        position: absolute;
+        left: 170px;
+        color:rgb(5, 15, 153)
+    }
+
+
+    .end{
+        position: relative;
+        top: 830px;
+        left: 570px;
+        width: 400px;
+        font-size: 25px;
+
+    }
+     
+    
+</style>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+   <div class="navbar">
+    <ol class="Retur">Return</ol>
+    <ol class="Hel">Help</ol>
+    <ol class="Reg">Register/Sign in</ol>
+    
+   </div>
+
+   <div class="Menu">
+    <img src="./searchicon.png" class="search">
+    <span class="shop">SHOP</span>
+    <span class="Essentials">ESSENTIALS</span>
+    <img src="./logo.png" class="logo">
+    <span class="best">BEST SELLERS</span>
+    <span class="ABOUT">ABOUT US</span>
+    <img class="profile" src="./profile.png">
+    <img class="notification" src="./notification.png" alt="">
+    <img class="bag" src="./ibag.png" alt="">
+   </div>
+
+
+   <div class="PARA1">
+    <span class="blue">    PROVIDING SERVICES     </span>
+    <span class="head">AT YOUR DOOR</span>
+    <img class="personimage" src="./main img.png">
+    <span class="para"><t>MACC Essentials</t> has an important role in making supplies and services available to customers and their patients during this critical time.This includes services in various domains. Our aim is to aid you. As much we can.</span>
+    <button class="learnmore"> LEARN MORE</button>
+   </div>
+
+
+   <div class="newpro">
+
+    <span class="newpro1"><t>NEW</t> PRODUCTS</span>
+   </div>
+
+
+   <div class="cards">
+        <div class="mask"> <img src="./mask.png">             </div>
+        <div class="seller"> <span class="TOP">TOP SELLER</span></div>
+        
+        <div class="axe"><img src="./iaxe.png"></div>
+        <div class="pads"><img src="./pads.png"></div>
+   </div>
+
+
+
+    <div class="title">
+    <span>Face Masks</span>
+    <span>Body Sprays</span>
+    <span>Stay Free Ultra Pad</span>
+    </div>
+    <div class="phoneimg">
+        <img  src="./phoneimg.png">
+    </div>
+
+    <div class="head2">
+        <span><t>MACC</t> WEEKLY DISOCUNT</span>
+
+        <button>VIEW ALL</button>
+
+        <div class="cards2">
+            <div class="axe2">
+                <img src="./iaxe.png" alt="">
+                <div class="off">
+                    <span>20% OFF</span>
+                </div>
+            </div>
+            <div class="pads2">
+                <img src="./pads.png">
+            <div class="off">
+                <span>40% OFF</span>
+            </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+    <div class="items">
+        <span class="spray1">BODY SPRAY</span>
+        <span class="price1"><img src="./price 2.png"></span>
+        <span class="price2"><img src="./price 1.png"></span>
+        <span class="pad1">Stay free ultra Pad</span>
+
+    </div>
+
+    <div class="box">
+        <div class="Sellings">
+            <span class="sellings1"><t>MACC</t> TOP SELLINGS</span>
+            <button class="butt2">VIEW ALL</button>
+        </div>
+
+        <img class="image2" src="./image1.png">
+
+
+        <div>
+            <div class="spray2"><img src="./iaxe.png" alt=""></div>
+            <div class="off2"><span>20% OFF</span></div>
+            <div class="off3"><span>40% OFF</span></div>
+            <span class="spray3">BODY SPRAY</span>
+            <span class="mask3" >MASK</span>
+            <div class="mask2"><img src="./mask.png" alt=""></div>
+            <img class="four" src="./400.png" alt="">
+            <img class="four1" src="./400.png" alt="">
+        </div>
+    </div>
+
+    
+    
+    
+    <div class="footer">
+
+        <img class="logo2" src="./logo2.png" alt="">
+
+        <div class="objects">
+            <span>Home</span> 
+            <span>Collection</span>
+            <span>Products</span>
+            
+            
+        </div>
+
+        <div class="objects1">
+            <span>About</span>
+            <span>Contacts</span>
+            <span>FAQ</span>
+        </div>
+
+
+
+        <div class="para2">
+            <span>Be the first to know about our biggest and best sales. We'llnever send more than one mail one month.</span>
+        </div>
+
+        <div class="email" >
+            <input type="email" placeholder=" ENTER YOUR EMAIL">            
+        </div>
+        <i class="material-icons" style="font-size: 50px;">&#xe0be;</i>
+    </div>
+
+  
+    <div class="icons2">
+        <div><i class="fa fa-facebook-square" style="font-size:48px;;" id="three"></i></div>
+        <div><i class="fa fa-linkedin-square" style="font-size:48px;" id="two"></i></div>
+        
+        <div><i class="fa fa-twitter" style="font-size:48px;" id="one"></i></div>
+        <div><i class="fa fa-instagram" style="font-size:48px;" id="four"></i></div>
+
+    </div>
+
+
+    <p class="end"> All Rights Reserved</p>
+
+
+    
+  
+    
+    
+</body>
+</html>
